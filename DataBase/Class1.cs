@@ -36,13 +36,15 @@ namespace DataBase
             comando.Connection = conexion;
         }
 
+
+        // ejecuta la consulta
         public void ejecutarConsulta()
         {
 
             try
             {
                 conexion.Open();
-                // 
+                
                 lector = comando.ExecuteReader();
             }
             catch (Exception ex)
@@ -55,6 +57,8 @@ namespace DataBase
 
         }
 
+
+        // ejecuta la accion
         public void EjecutarAccion()
         {
             
@@ -70,6 +74,8 @@ namespace DataBase
             }
         }
 
+
+        // cierra conexiones
         public void cerrarConexion()
         {
             if(lector != null)
@@ -79,6 +85,8 @@ namespace DataBase
             conexion.Close();
         }
 
+
+        //Lee los datos traidos
         public SqlDataReader LectorReader
         {
             get { return lector; }

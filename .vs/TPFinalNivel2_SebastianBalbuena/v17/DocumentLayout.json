@@ -1,52 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Sebastian Balbuena\\Desktop\\TPFinalNivel2_SebastianBalbuena\\TPFinalNivel2_SebastianBalbuena\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{D96822F8-D6E7-402A-A97E-7860982DA97F}|Mercado\\Mercado.csproj|c:\\users\\sebastian balbuena\\desktop\\tpfinalnivel2_sebastianbalbuena\\tpfinalnivel2_sebastianbalbuena\\mercado\\formulario2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D96822F8-D6E7-402A-A97E-7860982DA97F}|Mercado\\Mercado.csproj|solutionrelative:mercado\\formulario2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D96822F8-D6E7-402A-A97E-7860982DA97F}|Mercado\\Mercado.csproj|C:\\Users\\Sebastian Balbuena\\Desktop\\TPFinalNivel2_SebastianBalbuena\\TPFinalNivel2_SebastianBalbuena\\mercado\\formulario2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D96822F8-D6E7-402A-A97E-7860982DA97F}|Mercado\\Mercado.csproj|solutionrelative:mercado\\formulario2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Formulario2.cs",
-              "DocumentMoniker": "C:\\Users\\Sebastian Balbuena\\Desktop\\TPFinalNivel2_SebastianBalbuena\\TPFinalNivel2_SebastianBalbuena\\Mercado\\Formulario2.cs",
-              "RelativeDocumentMoniker": "Mercado\\Formulario2.cs",
-              "ToolTip": "C:\\Users\\Sebastian Balbuena\\Desktop\\TPFinalNivel2_SebastianBalbuena\\TPFinalNivel2_SebastianBalbuena\\Mercado\\Formulario2.cs",
-              "RelativeToolTip": "Mercado\\Formulario2.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAuwFkAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T19:03:27.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Formulario2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Sebastian Balbuena\\Desktop\\TPFinalNivel2_SebastianBalbuena\\TPFinalNivel2_SebastianBalbuena\\Mercado\\Formulario2.cs",
-              "RelativeDocumentMoniker": "Mercado\\Formulario2.cs",
-              "ToolTip": "C:\\Users\\Sebastian Balbuena\\Desktop\\TPFinalNivel2_SebastianBalbuena\\TPFinalNivel2_SebastianBalbuena\\Mercado\\Formulario2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Mercado\\Formulario2.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T19:03:19.992Z"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

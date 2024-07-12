@@ -84,6 +84,26 @@ namespace Mercado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_apagar_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-apagar-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_apagar_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-apagar-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_billete_combinado_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-billete-combinado-30", resourceCulture);

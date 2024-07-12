@@ -19,12 +19,16 @@ namespace Mercado
     public partial class FormularioAgregar : Form
     {
 
+        // Nos ayudara a saber si un art se modifica o se agrega
+        // dependiendo de si tiene o no id
         private Articulos articulo = null;
         public FormularioAgregar()
         {
             InitializeComponent();
         }
 
+        
+        // Si recibe un art, hay art para Modificar
         public FormularioAgregar(Articulos articulo)
         {
             this.articulo = articulo;
@@ -38,7 +42,7 @@ namespace Mercado
         }
 
 
-        //Agregar Articulo
+        //Agregar Articulo/ Modificar art
         private void agregarnuevoarticulo_Click(object sender, EventArgs e)
         {
             Controler control = new Controler();
@@ -48,6 +52,8 @@ namespace Mercado
 
             try
             {
+
+                // Si es null, sera metodo agregar, caso contrario sera Modificar
                 if (articulo == null)
                     articulo = new Articulos(categoria, marca);
 
@@ -77,8 +83,8 @@ namespace Mercado
             catch (Exception ex)
             {
 
-                MessageBox.Show("Asegurese de utilizar numeros sin ( , ) y en su lugar utilizar ( . ) ");
-            }
+                MessageBox.Show("Asegurese de utilizar numeros sin  ( , )  y en su lugar utilizar  ( . )   /   Se aceptan solo numeros...");
+            } 
 
 
         }
@@ -122,6 +128,8 @@ namespace Mercado
             
         }
 
+
+        //mostrar imagen 
         private void barraimagen_Leave(object sender, EventArgs e)
         {
             try
@@ -136,16 +144,5 @@ namespace Mercado
             }
         }
 
-        // mover ventana
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int IParam);
-
-        private void panel2_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
     }
 }

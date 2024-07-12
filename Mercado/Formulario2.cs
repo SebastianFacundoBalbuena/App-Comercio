@@ -24,16 +24,9 @@ namespace Mercado
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
 
+        // metodo carga de articulos al iniciar programa
         private void Formulario2_Load(object sender, EventArgs e)
         {
             CargarFormulario();
@@ -41,6 +34,8 @@ namespace Mercado
             
         }
 
+
+        // metodo de carga de articulos 
         private void CargarFormulario()
         {
             Controler controler = new Controler();
@@ -58,8 +53,12 @@ namespace Mercado
 
             try
             {
+                if(panelformulario2.CurrentRow != null)
+                {
                 Articulos seleccionado = (Articulos)panelformulario2.CurrentRow.DataBoundItem;
                 fotos.Load(seleccionado.Imagen);
+                }
+
             }
             catch (Exception )
             {
@@ -68,6 +67,8 @@ namespace Mercado
             }
         }
 
+
+        //Metodo mostrar pantalla de agregado de art
         private void botonagregar_Click(object sender, EventArgs e)
         {
             FormularioAgregar newFor = new FormularioAgregar();
@@ -75,32 +76,50 @@ namespace Mercado
             CargarFormulario();
         }
 
+
+        // metodo eliminar art
         private void botoneliminar_Click(object sender, EventArgs e)
         {
-            Controler control = new Controler();    
-            Articulos articulo = (Articulos)panelformulario2.CurrentRow.DataBoundItem;
-
-            try
+            Controler control = new Controler();   
+            
+            if(panelformulario2.CurrentRow != null && panelformulario2.CurrentRow.DataBoundItem != null)
             {
-                DialogResult respuesta =  MessageBox.Show("Desea eliminar el objeto ?", "Eliminar", MessageBoxButtons.YesNo);
-                if(respuesta == DialogResult.Yes)
+               Articulos articulo = (Articulos)panelformulario2.CurrentRow.DataBoundItem;
+
+                try
                 {
-                control.Eliminar(articulo.Id);
-                CargarFormulario();
+                    DialogResult respuesta = MessageBox.Show("Desea eliminar el objeto ?", "Eliminar", MessageBoxButtons.YesNo);
+                    if (respuesta == DialogResult.Yes)
+                    {
+                        control.Eliminar(articulo.Id);
+                        CargarFormulario();
+                    }
+
                 }
+                catch (Exception ex)
+                {
 
+                    MessageBox.Show("Hubo un error : " + ex + " Contactese con el desarrollador.");
+                }
             }
-            catch (Exception ex)
+            else
             {
-
-                throw ex;
+                MessageBox.Show("No hay ningun elemento seleccionado para eliminar");
             }
+            
+
+
             
         }
 
+
+        // metodo modificar art
         private void botonmodificar_Click(object sender, EventArgs e)
         {
             Controler control = new Controler();
+            if(panelformulario2.CurrentRow != null && panelformulario2.CurrentRow.DataBoundItem != null)
+            {
+
             Articulos articulo = (Articulos)panelformulario2.CurrentRow.DataBoundItem;
 
             try
@@ -117,20 +136,51 @@ namespace Mercado
                 throw ex;
             }
 
+            }
+            else
+            {
+                MessageBox.Show("No hay ningun elemento seleccionado para modificar");
+            }
+
+
 
         }
 
-        // mover ventana
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int IParam);
 
 
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        // Mostrar hora/fecha
+        private void timer2_Tick(object sender, EventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            hora2.Text = DateTime.Now.ToLongTimeString();
+            fecha2.Text = DateTime.Now.ToLongDateString();
+        }
+
+
+        // Metodo filtrar datos escritos por el usuario en barra busqueda
+        private void barrabusqueda_TextChanged(object sender, EventArgs e)
+        {
+            Controler control = new Controler();
+            List<Articulos> listaFiltrada;
+            
+
+
+            if(busqueda.Text != "")
+            {
+                listaFiltrada = control.listar().FindAll(x => x.Nombre.ToUpper().Contains(barrabusqueda.Text.ToUpper()) || x.Categoria.ToUpper() == barrabusqueda.Text.ToUpper() || x.Marca.ToUpper() == barrabusqueda.Text.ToUpper());
+
+                panelformulario2.DataSource = null;
+                panelformulario2.DataSource = listaFiltrada;
+                panelformulario2.Columns["Imagen"].Visible = false;
+                panelformulario2.Columns["Id"].Visible = false;
+            }
+            else
+            {
+                panelformulario2.DataSource = null;
+                panelformulario2.DataSource = control.listar();
+                panelformulario2.Columns["Imagen"].Visible = false;
+                panelformulario2.Columns["Id"].Visible = false;
+            }
+
         }
     }
 }

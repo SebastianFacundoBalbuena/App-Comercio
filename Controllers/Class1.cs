@@ -162,6 +162,8 @@ namespace Controllers
             }
         }
 
+
+        //Metodo eliminar art
         public void Eliminar(int id)
         {
             Data data = new Data();
@@ -184,6 +186,8 @@ namespace Controllers
             }
         }
 
+
+        //Metodo modificar art
         public void Modificar(Articulos articulo, Categoria categoria, Marca marca)
         {
             Data data = new Data();

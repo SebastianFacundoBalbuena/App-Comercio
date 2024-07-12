@@ -18,45 +18,26 @@ namespace Mercado
             InitializeComponent();
         }
 
-        // cerrar ventana windows
-        private void botoncerrar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
 
-
-        //minimizar ventana windows
-        private void botonminimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-
-
-        // permite mover la ventana a gusto:
-
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int IParam);
-
-        private void panelarriba_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
+        // te lleva a la ventana productos
         private void botonproductos_Click(object sender, EventArgs e)
         {
             Formulario2 formulario2 = new Formulario2();
             formulario2.ShowDialog();
         }
 
+
+        // te muestra hora/fecha
         private void timer1_Tick(object sender, EventArgs e)
         {
             hora.Text = DateTime.Now.ToLongTimeString();
             fecha.Text = DateTime.Now.ToLongDateString();   
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

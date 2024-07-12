@@ -63,7 +63,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(370, 99);
             this.panel2.TabIndex = 10;
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // pictureBox1
             // 
@@ -273,10 +272,12 @@
             this.Controls.Add(this.botoncategoria);
             this.Controls.Add(this.botonombre);
             this.Controls.Add(this.panel2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(386, 506);
+            this.MinimumSize = new System.Drawing.Size(386, 506);
             this.Name = "FormularioAgregar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "1";
+            this.Text = "Agregar/Modificar";
             this.Load += new System.EventHandler(this.FormularioAgregar_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
