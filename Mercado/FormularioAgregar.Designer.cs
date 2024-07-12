@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelAgregar = new System.Windows.Forms.Label();
             this.botonombre = new System.Windows.Forms.Label();
@@ -48,21 +48,22 @@
             this.imagenAgregar = new System.Windows.Forms.PictureBox();
             this.textoCodigo = new System.Windows.Forms.Label();
             this.barracodigo = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenAgregar)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panel2
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(220)))));
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.labelAgregar);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(370, 99);
-            this.panel1.TabIndex = 10;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(220)))));
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.labelAgregar);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(370, 99);
+            this.panel2.TabIndex = 10;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // pictureBox1
             // 
@@ -271,14 +272,14 @@
             this.Controls.Add(this.botonmarca);
             this.Controls.Add(this.botoncategoria);
             this.Controls.Add(this.botonombre);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormularioAgregar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "1";
             this.Load += new System.EventHandler(this.FormularioAgregar_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenAgregar)).EndInit();
             this.ResumeLayout(false);
@@ -288,7 +289,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelAgregar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label botonombre;

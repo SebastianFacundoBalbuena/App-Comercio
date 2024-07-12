@@ -82,9 +82,13 @@ namespace Mercado
 
             try
             {
-
+                DialogResult respuesta =  MessageBox.Show("Desea eliminar el objeto ?", "Eliminar", MessageBoxButtons.YesNo);
+                if(respuesta == DialogResult.Yes)
+                {
                 control.Eliminar(articulo.Id);
                 CargarFormulario();
+                }
+
             }
             catch (Exception ex)
             {
@@ -114,6 +118,19 @@ namespace Mercado
             }
 
 
+        }
+
+        // mover ventana
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int IParam);
+
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

@@ -167,6 +167,7 @@
             this.panelarriba.Name = "panelarriba";
             this.panelarriba.Size = new System.Drawing.Size(984, 40);
             this.panelarriba.TabIndex = 2;
+            this.panelarriba.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelarriba_MouseDown);
             // 
             // botonminimizar
             // 

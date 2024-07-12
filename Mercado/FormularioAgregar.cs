@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Mercado;
+using System.Runtime.InteropServices;
 
 
 namespace Mercado
@@ -45,33 +46,41 @@ namespace Mercado
             Categoria categoria = new Categoria();
             Marca marca = new Marca();
 
-            
-
-            if (articulo == null)
-                articulo = new Articulos(categoria,marca);
-
-            
-            articulo.Codigo = barracodigo.Text.ToString();
-            articulo.Nombre = barranombre.Text;
-            articulo.Precio = int.Parse(barraprecio.Text);
-            articulo.Descripcion = barradescripcion.Text;
-            articulo.Imagen = barraimagen.Text;   
-            categoria.Id = ((Categoria)barracategoria.SelectedItem).Id;
-            marca.Id = ((Marca)barramarca.SelectedItem).Id;
-
-
-            if(articulo.Id != 0)
+            try
             {
-             control.Modificar(articulo, categoria, marca);
-             MessageBox.Show("Modificado exitosamente!");
+                if (articulo == null)
+                    articulo = new Articulos(categoria, marca);
+
+
+                articulo.Codigo = barracodigo.Text.ToString();
+                articulo.Nombre = barranombre.Text;
+                articulo.Precio = decimal.Parse(barraprecio.Text);
+                articulo.Descripcion = barradescripcion.Text;
+                articulo.Imagen = barraimagen.Text;
+                categoria.Id = ((Categoria)barracategoria.SelectedItem).Id;
+                marca.Id = ((Marca)barramarca.SelectedItem).Id;
+
+
+                if (articulo.Id != 0)
+                {
+                    control.Modificar(articulo, categoria, marca);
+                    MessageBox.Show("Modificado exitosamente!");
+                }
+                else
+                {
+                    control.Agregar(articulo, categoria, marca);
+                    MessageBox.Show("Agregado exitosamente!");
+                }
+
+                Close();
             }
-            else
+            catch (Exception ex)
             {
-            control.Agregar(articulo,categoria,marca);
-            MessageBox.Show("Agregado exitosamente!");
+
+                MessageBox.Show("Asegurese de utilizar numeros sin ( , ) y en su lugar utilizar ( . ) ");
             }
 
-            Close();
+
         }
 
 
@@ -125,6 +134,18 @@ namespace Mercado
 
                 imagenAgregar.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6dicyRXDD9U9eeuelNPyB8lh-dImHhiEvQ&s");
             }
+        }
+
+        // mover ventana
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int IParam);
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }
