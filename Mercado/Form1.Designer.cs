@@ -56,7 +56,7 @@
             this.panelmenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelmenu.Location = new System.Drawing.Point(0, 0);
             this.panelmenu.Name = "panelmenu";
-            this.panelmenu.Size = new System.Drawing.Size(274, 440);
+            this.panelmenu.Size = new System.Drawing.Size(274, 380);
             this.panelmenu.TabIndex = 1;
             // 
             // pictureBox2
@@ -64,7 +64,7 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::Mercado.Properties.Resources.icons8_apagar_30;
-            this.pictureBox2.Location = new System.Drawing.Point(116, 404);
+            this.pictureBox2.Location = new System.Drawing.Point(116, 344);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(34, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -76,7 +76,7 @@
             // 
             this.barrita1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.barrita1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(220)))));
-            this.barrita1.Location = new System.Drawing.Point(-5, 233);
+            this.barrita1.Location = new System.Drawing.Point(-5, 203);
             this.barrita1.Name = "barrita1";
             this.barrita1.Size = new System.Drawing.Size(10, 45);
             this.barrita1.TabIndex = 2;
@@ -93,7 +93,7 @@
             this.botonproductos.ForeColor = System.Drawing.Color.White;
             this.botonproductos.Image = global::Mercado.Properties.Resources.producto;
             this.botonproductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.botonproductos.Location = new System.Drawing.Point(11, 234);
+            this.botonproductos.Location = new System.Drawing.Point(11, 204);
             this.botonproductos.Name = "botonproductos";
             this.botonproductos.Size = new System.Drawing.Size(266, 44);
             this.botonproductos.TabIndex = 1;
@@ -105,7 +105,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::Mercado.Properties.Resources.rm410_11a_fotor_bg_remover_20240704142643;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(277, 190);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -164,7 +164,7 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.hora);
             this.panel1.Controls.Add(this.fecha);
-            this.panel1.Location = new System.Drawing.Point(400, 72);
+            this.panel1.Location = new System.Drawing.Point(283, 42);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(541, 300);
             this.panel1.TabIndex = 7;
@@ -174,9 +174,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1068, 440);
+            this.ClientSize = new System.Drawing.Size(834, 380);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelmenu);
+            this.MaximumSize = new System.Drawing.Size(850, 419);
             this.MinimumSize = new System.Drawing.Size(850, 364);
             this.Name = "Formulario1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

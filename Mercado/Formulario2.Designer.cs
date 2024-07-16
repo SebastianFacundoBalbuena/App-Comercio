@@ -123,7 +123,7 @@
             // 
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(140)))), ((int)(((byte)(230)))));
-            this.panel7.Location = new System.Drawing.Point(115, 373);
+            this.panel7.Location = new System.Drawing.Point(115, 384);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(38, 3);
             this.panel7.TabIndex = 14;
@@ -153,7 +153,7 @@
             this.busqueda.AutoSize = true;
             this.busqueda.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.busqueda.ForeColor = System.Drawing.Color.White;
-            this.busqueda.Location = new System.Drawing.Point(101, 294);
+            this.busqueda.Location = new System.Drawing.Point(102, 304);
             this.busqueda.Name = "busqueda";
             this.busqueda.Size = new System.Drawing.Size(70, 22);
             this.busqueda.TabIndex = 11;
