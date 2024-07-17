@@ -56,7 +56,7 @@
             this.panelmenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelmenu.Location = new System.Drawing.Point(0, 0);
             this.panelmenu.Name = "panelmenu";
-            this.panelmenu.Size = new System.Drawing.Size(274, 380);
+            this.panelmenu.Size = new System.Drawing.Size(274, 383);
             this.panelmenu.TabIndex = 1;
             // 
             // pictureBox2
@@ -64,7 +64,7 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::Mercado.Properties.Resources.icons8_apagar_30;
-            this.pictureBox2.Location = new System.Drawing.Point(116, 344);
+            this.pictureBox2.Location = new System.Drawing.Point(116, 347);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(34, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -76,7 +76,7 @@
             // 
             this.barrita1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.barrita1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(220)))));
-            this.barrita1.Location = new System.Drawing.Point(-5, 203);
+            this.barrita1.Location = new System.Drawing.Point(-5, 204);
             this.barrita1.Name = "barrita1";
             this.barrita1.Size = new System.Drawing.Size(10, 45);
             this.barrita1.TabIndex = 2;
@@ -93,7 +93,7 @@
             this.botonproductos.ForeColor = System.Drawing.Color.White;
             this.botonproductos.Image = global::Mercado.Properties.Resources.producto;
             this.botonproductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.botonproductos.Location = new System.Drawing.Point(11, 204);
+            this.botonproductos.Location = new System.Drawing.Point(11, 205);
             this.botonproductos.Name = "botonproductos";
             this.botonproductos.Size = new System.Drawing.Size(266, 44);
             this.botonproductos.TabIndex = 1;
@@ -103,11 +103,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::Mercado.Properties.Resources.rm410_11a_fotor_bg_remover_20240704142643;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -18);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(277, 190);
+            this.pictureBox1.Size = new System.Drawing.Size(274, 177);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -117,7 +116,7 @@
             this.hora.AutoSize = true;
             this.hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(220)))));
-            this.hora.Location = new System.Drawing.Point(83, 106);
+            this.hora.Location = new System.Drawing.Point(19, 104);
             this.hora.Name = "hora";
             this.hora.Size = new System.Drawing.Size(152, 55);
             this.hora.TabIndex = 3;
@@ -130,7 +129,7 @@
             this.fecha.AutoSize = true;
             this.fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fecha.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.fecha.Location = new System.Drawing.Point(87, 181);
+            this.fecha.Location = new System.Drawing.Point(23, 179);
             this.fecha.Name = "fecha";
             this.fecha.Size = new System.Drawing.Size(93, 33);
             this.fecha.TabIndex = 4;
@@ -144,7 +143,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(220)))));
-            this.panel3.Location = new System.Drawing.Point(67, 43);
+            this.panel3.Location = new System.Drawing.Point(3, 41);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(412, 5);
             this.panel3.TabIndex = 5;
@@ -152,7 +151,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(220)))));
-            this.panel4.Location = new System.Drawing.Point(67, 260);
+            this.panel4.Location = new System.Drawing.Point(3, 258);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(412, 5);
             this.panel4.TabIndex = 6;
@@ -164,9 +163,9 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.hora);
             this.panel1.Controls.Add(this.fecha);
-            this.panel1.Location = new System.Drawing.Point(283, 42);
+            this.panel1.Location = new System.Drawing.Point(334, 43);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(541, 300);
+            this.panel1.Size = new System.Drawing.Size(415, 300);
             this.panel1.TabIndex = 7;
             // 
             // Formulario1
@@ -174,11 +173,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(834, 380);
+            this.ClientSize = new System.Drawing.Size(802, 383);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelmenu);
-            this.MaximumSize = new System.Drawing.Size(850, 419);
-            this.MinimumSize = new System.Drawing.Size(850, 364);
+            this.MaximumSize = new System.Drawing.Size(905, 485);
+            this.MinimumSize = new System.Drawing.Size(718, 320);
             this.Name = "Formulario1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";

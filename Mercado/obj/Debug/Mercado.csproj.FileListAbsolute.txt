@@ -18,3 +18,7 @@ C:\Users\Sebastian Balbuena\Desktop\TPFinalNivel2_SebastianBalbuena\TPFinalNivel
 C:\Users\Sebastian Balbuena\Desktop\TPFinalNivel2_SebastianBalbuena\TPFinalNivel2_SebastianBalbuena\Mercado\bin\Debug\Controllers.pdb
 C:\Users\Sebastian Balbuena\Desktop\TPFinalNivel2_SebastianBalbuena\TPFinalNivel2_SebastianBalbuena\Mercado\obj\Debug\Mercado.FormularioAgregar.resources
 C:\Users\Sebastian Balbuena\Desktop\TPFinalNivel2_SebastianBalbuena\TPFinalNivel2_SebastianBalbuena\Mercado\obj\Debug\Mercado.VerDetalles.resources
+C:\Users\Sebastian Balbuena\Desktop\TPFinalNivel2_SebastianBalbuena\TPFinalNivel2_SebastianBalbuena\Mercado\bin\Debug\Mercado.exe.manifest
+C:\Users\Sebastian Balbuena\Desktop\TPFinalNivel2_SebastianBalbuena\TPFinalNivel2_SebastianBalbuena\Mercado\bin\Debug\Mercado.application
+C:\Users\Sebastian Balbuena\Desktop\TPFinalNivel2_SebastianBalbuena\TPFinalNivel2_SebastianBalbuena\Mercado\obj\Debug\Mercado.exe.manifest
+C:\Users\Sebastian Balbuena\Desktop\TPFinalNivel2_SebastianBalbuena\TPFinalNivel2_SebastianBalbuena\Mercado\obj\Debug\Mercado.application
