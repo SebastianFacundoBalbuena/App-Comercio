@@ -220,7 +220,7 @@
             this.agregarnuevoarticulo.Name = "agregarnuevoarticulo";
             this.agregarnuevoarticulo.Size = new System.Drawing.Size(112, 32);
             this.agregarnuevoarticulo.TabIndex = 8;
-            this.agregarnuevoarticulo.Text = " Agregar";
+            this.agregarnuevoarticulo.Text = " Aceptar";
             this.agregarnuevoarticulo.UseVisualStyleBackColor = false;
             this.agregarnuevoarticulo.Click += new System.EventHandler(this.agregarnuevoarticulo_Click);
             // 

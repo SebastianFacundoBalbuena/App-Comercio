@@ -14,6 +14,7 @@ using DataBase;
 using Dominio;
 
 
+
 namespace Mercado
 {
     public partial class Formulario2 : Form
@@ -43,6 +44,7 @@ namespace Mercado
             panelformulario2.DataSource = ListaElectronica;
             panelformulario2.Columns["Imagen"].Visible = false;
             panelformulario2.Columns["id"].Visible = false;
+            panelformulario2.Columns["Codigo"].Visible = false;
             fotos.Load(ListaElectronica[0].Imagen);
         }
 
@@ -172,6 +174,8 @@ namespace Mercado
                 panelformulario2.DataSource = listaFiltrada;
                 panelformulario2.Columns["Imagen"].Visible = false;
                 panelformulario2.Columns["Id"].Visible = false;
+                panelformulario2.Columns["Codigo"].Visible = false;
+                
             }
             else
             {
@@ -179,8 +183,40 @@ namespace Mercado
                 panelformulario2.DataSource = control.listar();
                 panelformulario2.Columns["Imagen"].Visible = false;
                 panelformulario2.Columns["Id"].Visible = false;
+                panelformulario2.Columns["Codigo"].Visible = false;
             }
 
+
+
+        }
+
+        private void botondetalle_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                if(panelformulario2.CurrentRow != null && panelformulario2.CurrentRow.DataBoundItem != null)
+                {
+                    Articulos art = (Articulos)panelformulario2.CurrentRow.DataBoundItem;
+                    VerDetalles detalle = new VerDetalles(art);
+                    detalle.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Asegurese de seleccionar un articulo...");
+                }
+
+
+            
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+            
         }
     }
 }

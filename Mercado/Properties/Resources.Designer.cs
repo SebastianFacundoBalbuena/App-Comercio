@@ -154,6 +154,26 @@ namespace Mercado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_detalles_emergentes_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-detalles-emergentes-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_detalles_emergentes_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-detalles-emergentes-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_editar_orden_de_producción_20 {
             get {
                 object obj = ResourceManager.GetObject("icons8-editar-orden-de-producción-20", resourceCulture);
@@ -257,6 +277,16 @@ namespace Mercado.Properties {
         internal static System.Drawing.Bitmap icons8_formularios_de_google_501 {
             get {
                 object obj = ResourceManager.GetObject("icons8-formularios-de-google-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_imagen_completa_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-imagen-completa-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
