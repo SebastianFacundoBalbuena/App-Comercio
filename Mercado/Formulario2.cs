@@ -190,6 +190,8 @@ namespace Mercado
 
         }
 
+
+        // Metodo seleccion de art y mostrar detalles
         private void botondetalle_Click(object sender, EventArgs e)
         {
 
@@ -203,7 +205,7 @@ namespace Mercado
                 }
                 else
                 {
-                    MessageBox.Show("Asegurese de seleccionar un articulo...");
+                    MessageBox.Show("Asegurese de seleccionar un articulo... (>)");
                 }
 
 

@@ -270,9 +270,9 @@
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(240)))));
             this.pictureBox1.Image = global::Mercado.Properties.Resources.icons8_imagen_completa_30;
-            this.pictureBox1.Location = new System.Drawing.Point(1148, 116);
+            this.pictureBox1.Location = new System.Drawing.Point(1152, 116);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(58, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(42, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;

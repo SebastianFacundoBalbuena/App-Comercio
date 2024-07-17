@@ -120,7 +120,7 @@ namespace Mercado
                     imagenAgregar.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6dicyRXDD9U9eeuelNPyB8lh-dImHhiEvQ&s");
                 }
                 barraimagen.Text = articulo.Imagen;
-                barraprecio.Text = articulo.Precio.ToString();
+                barraprecio.Text = articulo.Precio.ToString("0.##");
                 barracategoria.Text = articulo.Categoria;
                 barramarca.Text = articulo.Marca;
             }
