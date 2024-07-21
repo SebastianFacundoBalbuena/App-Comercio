@@ -28,7 +28,7 @@ namespace Mercado
         }
 
         
-        // Si recibe un art, hay art para Modificar
+        // Si recibe un art, hay art para Modificar 
         public FormularioAgregar(Articulos articulo)
         {
             this.articulo = articulo;
@@ -58,39 +58,116 @@ namespace Mercado
                     articulo = new Articulos(categoria, marca);
 
 
-                articulo.Codigo = barracodigo.Text.ToString();
-                articulo.Nombre = barranombre.Text;
-                articulo.Precio = decimal.Parse(barraprecio.Text);
-                articulo.Descripcion = barradescripcion.Text;
-                articulo.Imagen = barraimagen.Text;
-                categoria.Id = ((Categoria)barracategoria.SelectedItem).Id;
-                marca.Id = ((Marca)barramarca.SelectedItem).Id;
+                   // Validaciones
+                   if (!(barranombre.Text == "" || barracodigo.Text == "" || barraprecio.Text == ""))
+                   {
+
+                    articulo.Codigo = barracodigo.Text.ToString();
+                    articulo.Nombre = barranombre.Text;
+                    articulo.Precio = decimal.Parse(barraprecio.Text);
+                    articulo.Descripcion = barradescripcion.Text;
+                    articulo.Imagen = barraimagen.Text;
+                    categoria.Id = ((Categoria)barracategoria.SelectedItem).Id;
+                    marca.Id = ((Marca)barramarca.SelectedItem).Id;
+
+                      if (articulo.Id != 0)
+                      {
+                        control.Modificar(articulo, categoria, marca);
+                        MessageBox.Show("Modificado exitosamente!");
+                      }
+                      else
+                      {
+                        control.Agregar(articulo, categoria, marca);
+                        MessageBox.Show("Agregado exitosamente!");
+                      }
+
+                    Close();
+
+                    }
+                    else
+                    {
+                        // Validacion agregado
+                    if (this.articulo.Id == 0)
+                    {
+
+                        FormularioAgregar agregar = new FormularioAgregar();
+                        Close();
+
+                        if (barranombre.Text == "")
+                            agregar.barranombre.BackColor = Color.Red;
+                        if (barracodigo.Text == "")
+                            agregar.barracodigo.BackColor = Color.Red;
+                        if (barraprecio.Text == "")
+                            agregar.barraprecio.BackColor = Color.Red;
+
+                        if (barranombre.Text == "" && barracodigo.Text == "" && barraprecio.Text == "")
+                        {
+                            agregar.barranombre.BackColor = Color.Red;
+                            agregar.barracodigo.BackColor = Color.Red;
+                            agregar.barraprecio.BackColor = Color.Red;
+
+                        }
 
 
-                if (articulo.Id != 0)
-                {
-                    control.Modificar(articulo, categoria, marca);
-                    MessageBox.Show("Modificado exitosamente!");
+                        agregar.barracodigo.Text = barracodigo.Text;
+                        agregar.barranombre.Text = barranombre.Text;
+                        agregar.barraimagen.Text = barraimagen.Text;
+                        agregar.barraprecio.Text = barraprecio.Text;
+                        agregar.barradescripcion.Text = barradescripcion.Text;
+
+
+
+
+                        agregar.ShowDialog();
+
+
+                    }
+                      //Validacion Modificar
+                    else if(articulo.Id != 0)
+                    {
+                        FormularioAgregar agregar = new FormularioAgregar(articulo);
+                        Close();
+
+                        if (barranombre.Text == "")
+                            agregar.barranombre.BackColor = Color.Red;
+                        if (barracodigo.Text == "")
+                            agregar.barracodigo.BackColor = Color.Red;
+                        if (barraprecio.Text == "")
+                            agregar.barraprecio.BackColor = Color.Red;
+
+                        if (barranombre.Text == "" && barracodigo.Text == "" && barraprecio.Text == "")
+                        {
+                            agregar.barranombre.BackColor = Color.Red;
+                            agregar.barracodigo.BackColor = Color.Red;
+                            agregar.barraprecio.BackColor = Color.Red;
+
+                        }
+
+
+
+
+
+
+
+                        agregar.ShowDialog();
+                    }
+
+
                 }
-                else
-                {
-                    control.Agregar(articulo, categoria, marca);
-                    MessageBox.Show("Agregado exitosamente!");
-                }
 
-                Close();
+
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
-                MessageBox.Show("Asegurese de utilizar numeros sin  ( , )  y en su lugar utilizar  ( . )   /   Se aceptan solo numeros...");
+                MessageBox.Show("Solo numeros sin coma : ( , )");
             } 
 
 
         }
 
 
-        // Mostrar datos en las barras Categoria y Marca
+        // Mostrar datos en las barras Categoria, Marca y en general
         private void FormularioAgregar_Load(object sender, EventArgs e)
         {
             Controler control = new Controler();
@@ -99,7 +176,7 @@ namespace Mercado
             List<Marca> marca = control.MarcaListar();
 
 
-
+           
             barracategoria.DataSource = categoria;
 
             barramarca.DataSource = marca;
@@ -108,6 +185,9 @@ namespace Mercado
             //Mostra datos si se ha marcado la opcion MODIFICAR
             if(this.articulo != null)
             {
+
+                try
+                {
                 barracodigo.Text = articulo.Codigo;
                 barranombre.Text = articulo.Nombre;
                 barradescripcion.Text = articulo.Descripcion;
@@ -123,6 +203,14 @@ namespace Mercado
                 barraprecio.Text = articulo.Precio.ToString("0.##");
                 barracategoria.Text = articulo.Categoria;
                 barramarca.Text = articulo.Marca;
+                }
+                catch (Exception )
+                {
+
+                    imagenAgregar.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6dicyRXDD9U9eeuelNPyB8lh-dImHhiEvQ&s");
+                    MessageBox.Show("Error al cargar imagen");
+                }
+
             }
             
             
@@ -143,6 +231,7 @@ namespace Mercado
                 imagenAgregar.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6dicyRXDD9U9eeuelNPyB8lh-dImHhiEvQ&s");
             }
         }
+
 
     }
 }

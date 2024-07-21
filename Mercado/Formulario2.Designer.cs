@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -67,7 +68,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(240)))));
+            this.panel2.BackColor = System.Drawing.Color.SeaGreen;
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.barrabusqueda);
@@ -86,7 +87,7 @@
             // panel7
             // 
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(140)))), ((int)(((byte)(230)))));
+            this.panel7.BackColor = System.Drawing.Color.DarkGreen;
             this.panel7.Location = new System.Drawing.Point(115, 366);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(38, 3);
@@ -95,7 +96,7 @@
             // panel6
             // 
             this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(140)))), ((int)(((byte)(230)))));
+            this.panel6.BackColor = System.Drawing.Color.DarkGreen;
             this.panel6.Location = new System.Drawing.Point(115, 270);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(38, 3);
@@ -126,7 +127,7 @@
             // panel4
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(140)))), ((int)(((byte)(230)))));
+            this.panel4.BackColor = System.Drawing.Color.DarkGreen;
             this.panel4.Location = new System.Drawing.Point(17, 553);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(245, 4);
@@ -135,7 +136,7 @@
             // panel5
             // 
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(140)))), ((int)(((byte)(230)))));
+            this.panel5.BackColor = System.Drawing.Color.DarkGreen;
             this.panel5.Location = new System.Drawing.Point(17, 438);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(245, 4);
@@ -147,7 +148,7 @@
             this.fecha2.AutoSize = true;
             this.fecha2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fecha2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.fecha2.Location = new System.Drawing.Point(23, 512);
+            this.fecha2.Location = new System.Drawing.Point(38, 518);
             this.fecha2.Name = "fecha2";
             this.fecha2.Size = new System.Drawing.Size(51, 20);
             this.fecha2.TabIndex = 8;
@@ -159,7 +160,7 @@
             this.hora2.AutoSize = true;
             this.hora2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hora2.ForeColor = System.Drawing.SystemColors.Control;
-            this.hora2.Location = new System.Drawing.Point(22, 459);
+            this.hora2.Location = new System.Drawing.Point(86, 462);
             this.hora2.Name = "hora2";
             this.hora2.Size = new System.Drawing.Size(100, 37);
             this.hora2.TabIndex = 7;
@@ -193,28 +194,40 @@
             this.panelformulario2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.panelformulario2.BackgroundColor = System.Drawing.Color.MintCream;
             this.panelformulario2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.panelformulario2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.panelformulario2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.panelformulario2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.panelformulario2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.panelformulario2.DefaultCellStyle = dataGridViewCellStyle3;
             this.panelformulario2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.panelformulario2.Location = new System.Drawing.Point(317, 160);
             this.panelformulario2.Name = "panelformulario2";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.panelformulario2.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.panelformulario2.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.panelformulario2.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.panelformulario2.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.panelformulario2.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.panelformulario2.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.panelformulario2.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.ForestGreen;
+            this.panelformulario2.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.panelformulario2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.panelformulario2.Size = new System.Drawing.Size(719, 368);
             this.panelformulario2.TabIndex = 1;
@@ -235,10 +248,10 @@
             // botonagregar
             // 
             this.botonagregar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.botonagregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(220)))));
+            this.botonagregar.BackColor = System.Drawing.Color.DarkGreen;
             this.botonagregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonagregar.FlatAppearance.BorderSize = 0;
-            this.botonagregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.botonagregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
             this.botonagregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonagregar.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonagregar.ForeColor = System.Drawing.Color.White;
@@ -255,10 +268,10 @@
             // botonmodificar
             // 
             this.botonmodificar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.botonmodificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(220)))));
+            this.botonmodificar.BackColor = System.Drawing.Color.DarkGreen;
             this.botonmodificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonmodificar.FlatAppearance.BorderSize = 0;
-            this.botonmodificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.botonmodificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
             this.botonmodificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonmodificar.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonmodificar.ForeColor = System.Drawing.Color.White;
@@ -275,10 +288,10 @@
             // botoneliminar
             // 
             this.botoneliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.botoneliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(220)))));
+            this.botoneliminar.BackColor = System.Drawing.Color.DarkGreen;
             this.botoneliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botoneliminar.FlatAppearance.BorderSize = 0;
-            this.botoneliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.botoneliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
             this.botoneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botoneliminar.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botoneliminar.ForeColor = System.Drawing.Color.White;
@@ -294,7 +307,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(240)))));
+            this.pictureBox4.BackColor = System.Drawing.Color.SeaGreen;
             this.pictureBox4.Image = global::Mercado.Properties.Resources.producto;
             this.pictureBox4.Location = new System.Drawing.Point(14, 0);
             this.pictureBox4.Name = "pictureBox4";
@@ -316,7 +329,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(240)))));
+            this.pictureBox5.BackColor = System.Drawing.Color.SeaGreen;
             this.pictureBox5.Image = global::Mercado.Properties.Resources.producto;
             this.pictureBox5.Location = new System.Drawing.Point(232, 0);
             this.pictureBox5.Name = "pictureBox5";
@@ -328,7 +341,7 @@
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(240)))));
+            this.panel3.BackColor = System.Drawing.Color.SeaGreen;
             this.panel3.Controls.Add(this.pictureBox5);
             this.panel3.Controls.Add(this.labelAgregar);
             this.panel3.Controls.Add(this.pictureBox4);
@@ -340,10 +353,10 @@
             // botondetalle
             // 
             this.botondetalle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.botondetalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(220)))));
+            this.botondetalle.BackColor = System.Drawing.Color.DarkGreen;
             this.botondetalle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botondetalle.FlatAppearance.BorderSize = 0;
-            this.botondetalle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.botondetalle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
             this.botondetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botondetalle.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botondetalle.ForeColor = System.Drawing.Color.White;
@@ -360,7 +373,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(240)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.SeaGreen;
             this.pictureBox1.Image = global::Mercado.Properties.Resources.icons8_imagen_completa_30;
             this.pictureBox1.Location = new System.Drawing.Point(1140, 98);
             this.pictureBox1.Name = "pictureBox1";

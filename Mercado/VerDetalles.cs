@@ -30,13 +30,33 @@ namespace Mercado
         // Carga los datos del art en la lista
         private void VerDetalles_Load(object sender, EventArgs e)
         {
-            paneldetalles.Items.Add("Id DB : " + articulo.Id);
-            paneldetalles.Items.Add("Codigo : " + articulo.Codigo);
-            paneldetalles.Items.Add("Nombre : " +  articulo.Nombre);
-            paneldetalles.Items.Add("Marca : " + articulo.Marca);
-            paneldetalles.Items.Add("Categoria : " + articulo.Categoria);
-            paneldetalles.Items.Add("Descripcion : " + articulo.Descripcion);
-            imagendetalle.Load(articulo.Imagen);
+            try
+            {
+
+                paneldetalles.Items.Add("Id DB : " + articulo.Id);
+                paneldetalles.Items.Add("Codigo : " + articulo.Codigo);
+                paneldetalles.Items.Add("Nombre : " + articulo.Nombre);
+                paneldetalles.Items.Add("Marca : " + articulo.Marca);
+                paneldetalles.Items.Add("Categoria : " + articulo.Categoria);
+                paneldetalles.Items.Add("Descripcion : " + articulo.Descripcion);
+                paneldetalles.Items.Add("Precio : " + articulo.Precio);
+
+                if(articulo.Imagen != null && articulo.Imagen != "")
+                {
+                     imagendetalle.Load(articulo.Imagen);
+                }
+                else
+                {
+                    imagendetalle.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6dicyRXDD9U9eeuelNPyB8lh-dImHhiEvQ&s");
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                imagendetalle.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6dicyRXDD9U9eeuelNPyB8lh-dImHhiEvQ&s");
+                MessageBox.Show("Error de imagen ");
+            }
+
 
             
         }

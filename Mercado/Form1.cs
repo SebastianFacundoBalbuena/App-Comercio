@@ -31,7 +31,7 @@ namespace Mercado
         // te muestra hora/fecha
         private void timer1_Tick(object sender, EventArgs e)
         {
-            hora.Text = DateTime.Now.ToLongTimeString();
+            hora.Text = DateTime.Now.ToString("HH:mm");
             fecha.Text = DateTime.Now.ToLongDateString();   
         }
 

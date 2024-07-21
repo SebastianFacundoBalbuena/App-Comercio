@@ -44,7 +44,7 @@ namespace Mercado
             panelformulario2.DataSource = ListaElectronica;
             panelformulario2.Columns["Imagen"].Visible = false;
             panelformulario2.Columns["id"].Visible = false;
-            panelformulario2.Columns["Codigo"].Visible = false;
+           
             fotos.Load(ListaElectronica[0].Imagen);
         }
 
@@ -73,7 +73,7 @@ namespace Mercado
         //Metodo mostrar pantalla de agregado de art
         private void botonagregar_Click(object sender, EventArgs e)
         {
-            FormularioAgregar newFor = new FormularioAgregar();
+            FormularioAgregar newFor = new FormularioAgregar(); 
             newFor.ShowDialog();
             CargarFormulario();
         }
@@ -153,7 +153,7 @@ namespace Mercado
         // Mostrar hora/fecha
         private void timer2_Tick(object sender, EventArgs e)
         {
-            hora2.Text = DateTime.Now.ToLongTimeString();
+            hora2.Text = DateTime.Now.ToString("hh:mm");
             fecha2.Text = DateTime.Now.ToLongDateString();
         }
 
@@ -168,7 +168,7 @@ namespace Mercado
 
             if(busqueda.Text != "")
             {
-                listaFiltrada = control.listar().FindAll(x => x.Nombre.ToUpper().Contains(barrabusqueda.Text.ToUpper()) || x.Categoria.ToUpper() == barrabusqueda.Text.ToUpper() || x.Marca.ToUpper() == barrabusqueda.Text.ToUpper());
+                listaFiltrada = control.listar().FindAll(x => x.Nombre.ToUpper().Contains(barrabusqueda.Text.ToUpper()) || x.Categoria.ToUpper() == barrabusqueda.Text.ToUpper() || x.Marca.ToUpper() == barrabusqueda.Text.ToUpper() || x.Codigo.ToUpper() == barrabusqueda.Text.ToUpper());
 
                 panelformulario2.DataSource = null;
                 panelformulario2.DataSource = listaFiltrada;

@@ -42,7 +42,8 @@ namespace Controllers
                     newArticulo.Descripcion = (string)data.LectorReader["Descripcion"];
                     marca.Marcas = (string)data.LectorReader["MarcaDes"];
                     newArticulo.Imagen = (string)data.LectorReader["ImagenUrl"];
-                    newArticulo.Precio = (decimal)data.LectorReader["Precio"];
+                    //Utilizamos el metodo de la clase string (TrimEnd) para eliminar caracteres no deseados
+                    newArticulo.Precio = decimal.Parse(((decimal)data.LectorReader["Precio"]).ToString().TrimEnd('0', '.'));
                     categoria.Categorias = (string)data.LectorReader["Categoria"];
 
 

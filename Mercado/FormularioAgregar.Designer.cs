@@ -55,7 +55,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(220)))));
+            this.panel2.BackColor = System.Drawing.Color.SeaGreen;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.labelAgregar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -188,10 +188,10 @@
             // 
             // cancelarnuevoarticulo
             // 
-            this.cancelarnuevoarticulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(220)))));
+            this.cancelarnuevoarticulo.BackColor = System.Drawing.Color.DarkGreen;
             this.cancelarnuevoarticulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cancelarnuevoarticulo.FlatAppearance.BorderSize = 0;
-            this.cancelarnuevoarticulo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.cancelarnuevoarticulo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
             this.cancelarnuevoarticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelarnuevoarticulo.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelarnuevoarticulo.ForeColor = System.Drawing.Color.White;
@@ -207,10 +207,10 @@
             // 
             // agregarnuevoarticulo
             // 
-            this.agregarnuevoarticulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(125)))), ((int)(((byte)(220)))));
+            this.agregarnuevoarticulo.BackColor = System.Drawing.Color.DarkGreen;
             this.agregarnuevoarticulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.agregarnuevoarticulo.FlatAppearance.BorderSize = 0;
-            this.agregarnuevoarticulo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.agregarnuevoarticulo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
             this.agregarnuevoarticulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.agregarnuevoarticulo.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agregarnuevoarticulo.ForeColor = System.Drawing.Color.White;

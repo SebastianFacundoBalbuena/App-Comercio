@@ -40,7 +40,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(155)))), ((int)(((byte)(220)))));
+            this.panel1.BackColor = System.Drawing.Color.SeaGreen;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.detalles);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -72,7 +72,7 @@
             // 
             // paneldetalles
             // 
-            this.paneldetalles.Font = new System.Drawing.Font("Cambria", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paneldetalles.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.paneldetalles.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.paneldetalles.HideSelection = false;
             this.paneldetalles.Location = new System.Drawing.Point(12, 95);
