@@ -68,7 +68,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(91)))));
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.barrabusqueda);
@@ -81,14 +81,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(280, 583);
+            this.panel2.Size = new System.Drawing.Size(276, 583);
             this.panel2.TabIndex = 2;
             // 
             // panel7
             // 
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel7.BackColor = System.Drawing.Color.DarkGreen;
-            this.panel7.Location = new System.Drawing.Point(115, 366);
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(91)))));
+            this.panel7.Location = new System.Drawing.Point(113, 366);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(38, 3);
             this.panel7.TabIndex = 14;
@@ -96,8 +96,8 @@
             // panel6
             // 
             this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel6.BackColor = System.Drawing.Color.DarkGreen;
-            this.panel6.Location = new System.Drawing.Point(115, 270);
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(91)))));
+            this.panel6.Location = new System.Drawing.Point(113, 270);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(38, 3);
             this.panel6.TabIndex = 13;
@@ -106,7 +106,7 @@
             // 
             this.barrabusqueda.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.barrabusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.barrabusqueda.Location = new System.Drawing.Point(17, 311);
+            this.barrabusqueda.Location = new System.Drawing.Point(15, 311);
             this.barrabusqueda.Name = "barrabusqueda";
             this.barrabusqueda.Size = new System.Drawing.Size(245, 29);
             this.barrabusqueda.TabIndex = 12;
@@ -118,7 +118,7 @@
             this.busqueda.AutoSize = true;
             this.busqueda.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.busqueda.ForeColor = System.Drawing.Color.White;
-            this.busqueda.Location = new System.Drawing.Point(102, 286);
+            this.busqueda.Location = new System.Drawing.Point(100, 286);
             this.busqueda.Name = "busqueda";
             this.busqueda.Size = new System.Drawing.Size(70, 22);
             this.busqueda.TabIndex = 11;
@@ -127,8 +127,8 @@
             // panel4
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel4.BackColor = System.Drawing.Color.DarkGreen;
-            this.panel4.Location = new System.Drawing.Point(17, 553);
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(91)))));
+            this.panel4.Location = new System.Drawing.Point(15, 553);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(245, 4);
             this.panel4.TabIndex = 10;
@@ -136,8 +136,8 @@
             // panel5
             // 
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel5.BackColor = System.Drawing.Color.DarkGreen;
-            this.panel5.Location = new System.Drawing.Point(17, 438);
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(91)))));
+            this.panel5.Location = new System.Drawing.Point(15, 438);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(245, 4);
             this.panel5.TabIndex = 9;
@@ -148,7 +148,7 @@
             this.fecha2.AutoSize = true;
             this.fecha2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fecha2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.fecha2.Location = new System.Drawing.Point(38, 518);
+            this.fecha2.Location = new System.Drawing.Point(36, 518);
             this.fecha2.Name = "fecha2";
             this.fecha2.Size = new System.Drawing.Size(51, 20);
             this.fecha2.TabIndex = 8;
@@ -160,7 +160,7 @@
             this.hora2.AutoSize = true;
             this.hora2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hora2.ForeColor = System.Drawing.SystemColors.Control;
-            this.hora2.Location = new System.Drawing.Point(86, 462);
+            this.hora2.Location = new System.Drawing.Point(84, 462);
             this.hora2.Name = "hora2";
             this.hora2.Size = new System.Drawing.Size(100, 37);
             this.hora2.TabIndex = 7;
@@ -169,10 +169,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox3.Image = global::Mercado.Properties.Resources.rm410_11a_fotor_bg_remover_20240704142643;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 31);
+            this.pictureBox3.Image = global::Mercado.Properties.Resources.Captura_de_pantalla_2024_07_23_190807_Photoroom;
+            this.pictureBox3.Location = new System.Drawing.Point(-2, 3);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(274, 190);
+            this.pictureBox3.Size = new System.Drawing.Size(278, 218);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
@@ -226,7 +226,7 @@
             this.panelformulario2.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.panelformulario2.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.panelformulario2.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
-            this.panelformulario2.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.ForestGreen;
+            this.panelformulario2.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(91)))));
             this.panelformulario2.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.panelformulario2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.panelformulario2.Size = new System.Drawing.Size(719, 368);
@@ -248,10 +248,10 @@
             // botonagregar
             // 
             this.botonagregar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.botonagregar.BackColor = System.Drawing.Color.DarkGreen;
+            this.botonagregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(91)))));
             this.botonagregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonagregar.FlatAppearance.BorderSize = 0;
-            this.botonagregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
+            this.botonagregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(91)))));
             this.botonagregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonagregar.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonagregar.ForeColor = System.Drawing.Color.White;
@@ -268,10 +268,10 @@
             // botonmodificar
             // 
             this.botonmodificar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.botonmodificar.BackColor = System.Drawing.Color.DarkGreen;
+            this.botonmodificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(91)))));
             this.botonmodificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonmodificar.FlatAppearance.BorderSize = 0;
-            this.botonmodificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
+            this.botonmodificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(91)))));
             this.botonmodificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonmodificar.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonmodificar.ForeColor = System.Drawing.Color.White;
@@ -288,10 +288,10 @@
             // botoneliminar
             // 
             this.botoneliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.botoneliminar.BackColor = System.Drawing.Color.DarkGreen;
+            this.botoneliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(91)))));
             this.botoneliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botoneliminar.FlatAppearance.BorderSize = 0;
-            this.botoneliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
+            this.botoneliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(91)))));
             this.botoneliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botoneliminar.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botoneliminar.ForeColor = System.Drawing.Color.White;
@@ -307,7 +307,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.SeaGreen;
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(91)))));
             this.pictureBox4.Image = global::Mercado.Properties.Resources.producto;
             this.pictureBox4.Location = new System.Drawing.Point(14, 0);
             this.pictureBox4.Name = "pictureBox4";
@@ -329,7 +329,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.SeaGreen;
+            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(91)))));
             this.pictureBox5.Image = global::Mercado.Properties.Resources.producto;
             this.pictureBox5.Location = new System.Drawing.Point(232, 0);
             this.pictureBox5.Name = "pictureBox5";
@@ -341,7 +341,7 @@
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(91)))));
             this.panel3.Controls.Add(this.pictureBox5);
             this.panel3.Controls.Add(this.labelAgregar);
             this.panel3.Controls.Add(this.pictureBox4);
@@ -353,10 +353,10 @@
             // botondetalle
             // 
             this.botondetalle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.botondetalle.BackColor = System.Drawing.Color.DarkGreen;
+            this.botondetalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(91)))));
             this.botondetalle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botondetalle.FlatAppearance.BorderSize = 0;
-            this.botondetalle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.ForestGreen;
+            this.botondetalle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(91)))));
             this.botondetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botondetalle.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botondetalle.ForeColor = System.Drawing.Color.White;
@@ -373,7 +373,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackColor = System.Drawing.Color.SeaGreen;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(91)))));
             this.pictureBox1.Image = global::Mercado.Properties.Resources.icons8_imagen_completa_30;
             this.pictureBox1.Location = new System.Drawing.Point(1140, 98);
             this.pictureBox1.Name = "pictureBox1";

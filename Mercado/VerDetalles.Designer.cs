@@ -40,7 +40,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(178)))), ((int)(((byte)(91)))));
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.detalles);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
